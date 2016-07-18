@@ -1,0 +1,64 @@
+html, body {
+	min-height: 100%;
+	height:100%;
+	width: 100%;
+}
+
+#downarrow {
+	position: absolute;
+	bottom: 16px;
+	left: 50%;
+	height: 48px;
+	width: 48px;
+	border-radius: 48px;
+	background-color: #fff;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid black;
+}
+
+#downarrow > span {
+	line-height: 48px;
+}
+
+#downarrow:hover {
+	bottom: 12px;
+}
+
+.sitehead {
+	float: right;
+	padding-left: 16px;
+}
+
+.leftheader {
+	float: left;
+	width: 50%;
+}
+
+.rightheader {
+	float: left;
+	width: 50%;
+	padding-top: 16px;
+}
+
+#pageone {
+	background-image: url('http://linktelecom.co.in/images/content_1.jpg');
+	width: 100%;
+	min-height: 100%;
+	-moz-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+	-o-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+	-webkit-filter: grayscale(100%);
+	filter: gray;
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+}
+
+.text {
+	background-color: #fff;
+  background-color: rgba(255,255,255,0.5);
+  padding: 16px;
+
+}
+
+#header {
+	background-color: #fff;
+}
