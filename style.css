@@ -25,33 +25,20 @@ html, body {
 	bottom: 12px;
 }
 
-.sitehead {
-	float: right;
-	padding-left: 16px;
-}
-
-.leftheader {
-	float: left;
-	width: 50%;
-}
-
-.rightheader {
-	float: left;
-	width: 50%;
-	padding-top: 16px;
-}
-
 #pageone {
+	padding-top: 80px;
 	width: 100%;
 	min-height: 100%;
 }
 
 #pagetwo {
+	padding-top: 80px;
 	width: 100%;
 	min-height: 100%;
 }
 
 #pagethree {
+	padding-top: 80px;
 	width: 100%;
 	min-height: 80%;
 }
@@ -59,7 +46,9 @@ html, body {
 #footer {
 	width: 100%;
 	min-height: 20%;
-	background-color: #aee1f0;
+	background-color: #6a6a6a;
+	color: #fff;
+	padding-top: 12px;
 }
 
 .text {
@@ -73,6 +62,21 @@ html, body {
 
 #header {
 	background-color: #fff;
+	box-shadow: 0 5px 5px -5px rgba(0,0,0,0.15);
+	width: 100%;
+	position: fixed;
+  top: 0;
+  bottom: auto;
+  z-index: 2;
+}
+
+.logohd {
+	height: 80px;
+	width: 80px;
+}
+
+.btnhd {
+	margin-top: 22px;
 }
 
 .linkbtn, .linkbtninit {
@@ -102,4 +106,35 @@ html, body {
 	height: 48px !important;
 	padding-left: 24px !important;
 	padding-right: 24px !important;
+}
+
+.directorimg {
+	width: 100px;
+}
+
+.mapimg {
+	width: 100%;
+}
+
+.panelbtn {
+	background-color: #6a6a6a;
+	border: 1px solid #fff;
+	color: #fff;
+	padding-left: 16px;
+	padding-right: 16px;
+	height: 36px;
+	line-height: 36px;
+	cursor: pointer;
+}
+
+.panelbtn:hover {
+	background-color: #000 !important;
+}
+
+.activepanel {
+	background-color: #000 !important;
+}
+
+.partnerimg {
+	width: 80%;
 }
