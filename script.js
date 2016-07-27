@@ -12,4 +12,12 @@ $(document).ready(function () {
 		$('.itimg').hide();
 		$('.teimg').show();
 	});
+	$(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height  > 0) {
+      $('#header').addClass('headershadow');
+    } else {
+    	$('#header').removeClass('headershadow');
+    }
+	});
 });
