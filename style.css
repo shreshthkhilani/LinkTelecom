@@ -4,43 +4,25 @@ html, body {
 	width: 100%;
 }
 
-#downarrow {
-	position: absolute;
-	bottom: 16px;
-	left: 50%;
-	height: 48px;
-	width: 48px;
-	border-radius: 48px;
-	background-color: #fff;
-	text-align: center;
-	cursor: pointer;
-	box-shadow: 0 0 2px #777;
-}
-
-#downarrow > span {
-	line-height: 48px;
-}
-
-#downarrow:hover {
-	bottom: 12px;
-}
-
 #top {
 	padding-top: 96px;
 	width: 100%;
 	min-height: 100%;
+	position: relative;
 }
 
 #partners {
 	padding-top: 96px;
 	width: 100%;
 	min-height: 100%;
+	position: relative;
 }
 
 #board {
 	padding-top: 96px;
 	width: 100%;
 	min-height: 80%;
+	position: relative;
 }
 
 #footer {
@@ -142,4 +124,21 @@ html, body {
 
 .partnerimg {
 	width: 80%;
+}
+
+.down {
+	background-color: #fff;
+	border: none;
+	height: 36px;
+	width: 36px;
+	border-radius: 36px;
+	line-height: 36px;
+	position: absolute;
+	bottom: 16px;
+	right: 32px;
+	box-shadow: 0 0 2px rgba(0,0,0,0.45);
+}
+
+.down:hover {
+	bottom: 14px !important;
 }

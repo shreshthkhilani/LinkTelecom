@@ -12,12 +12,22 @@ $(document).ready(function () {
 		$('.itimg').hide();
 		$('.teimg').show();
 	});
-	$(window).scroll(function() {
+	$(window).scroll(function () {
     var height = $(window).scrollTop();
     if (height  > 0) {
       $('#header').addClass('headershadow');
     } else {
     	$('#header').removeClass('headershadow');
     }
+	});
+	$('#downone').click(function () {
+		$('html, body').animate({
+        scrollTop: $("#partners").offset().top
+    }, 1000);
+	});
+	$('#downtwo').click(function () {
+		$('html, body').animate({
+        scrollTop: $("#board").offset().top
+    }, 1000);
 	});
 });
