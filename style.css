@@ -73,33 +73,34 @@ html, body {
 	margin-top: 22px;
 }
 
-.linkbtn, .linkbtninit {
+.linkbtn, .linkbtnhd, .linkbtninit {
 	background-color: #ffd964;
 	padding-left: 16px;
 	padding-right: 16px;
 	border-radius: 4px;
 	height: 36px;
 	color: #000;
-	border: none;
+	border: 1px solid #ffd964 !important;
 }
 
 .linkbtn:hover {
 	background-color: #fbb03b !important;
+	border: 1px solid #fbb03b !important;
 }
 
 .linkbtninit {
 	background-color: #fff;
-	border: 1px solid #ffd964 !important;
 }
 
 .linkbtninit:hover {
-	border: 1px solid #fbb03b !important;
+	background-color: #ffd964 !important;
 }
 
 .linkbtnbig {
 	height: 48px !important;
 	padding-left: 24px !important;
 	padding-right: 24px !important;
+	border-width: 2px !important;
 }
 
 .directorimg {

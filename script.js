@@ -14,10 +14,13 @@ $(document).ready(function () {
 		$('.teimg').show();
 	});
 	$(window).scroll(function () {
-		var height = $(window).scrollTop();
+		var topht = $('#top').offset().top;
+		var aboutht = $('#about').offset().top;
+		var partnersht = $('#partners').offset().top;
 		var boardht = $('#board').offset().top;
+		var height = $(window).scrollTop();
     if (height  > 0) {
-      $('#header').addClass('headershadow');
+    	$('#header').addClass('headershadow');
     } else {
     	$('#header').removeClass('headershadow');
     }
@@ -28,6 +31,23 @@ $(document).ready(function () {
     	$('.down').show();
     	$('.up').hide();
     }
+    if (height >= topht && height < aboutht) {
+    	$('#abouthd').addClass('linkbtninit');
+			$('#partnershd').addClass('linkbtninit');
+			$('#boardhd').addClass('linkbtninit');
+		} else if (height >= aboutht && height < partnersht) {
+			$('#abouthd').removeClass('linkbtninit');
+			$('#partnershd').addClass('linkbtninit');
+			$('#boardhd').addClass('linkbtninit');
+		} else if (height >= partnersht && height < boardht) {
+			$('#abouthd').addClass('linkbtninit');
+			$('#partnershd').removeClass('linkbtninit');
+			$('#boardhd').addClass('linkbtninit');
+		} else if (height >= boardht) {
+			$('#abouthd').addClass('linkbtninit');
+			$('#partnershd').addClass('linkbtninit');
+			$('#boardhd').removeClass('linkbtninit');
+		}
 	});
 	$('.down').click(function () {
 		onepagedown();
@@ -37,9 +57,9 @@ $(document).ready(function () {
 	});
 	$(window).keydown(function (e) {
 		var key = e.keyCode;
-		if (key === 39 || key === 40) {
+		if (key === 39) {
 			onepagedown();
-		} else if (key === 37 || key === 38) {
+		} else if (key === 37) {
 			onepageup();
 		}
 	});
@@ -65,12 +85,14 @@ $(document).ready(function () {
 		var partnersht = $('#partners').offset().top;
 		var boardht = $('#board').offset().top;
 		var height = $(window).scrollTop();
-		if (height >= aboutht && height < partnersht) {
-			scrolltothiselem('#top');
-		} else if (height >= partnersht && height < boardht) {
+	  if (height > topht && height <= aboutht) {
+	  	scrolltothiselem('#top');
+		} else if (height > aboutht && height <= partnersht) {
 			scrolltothiselem('#about');
-		} else if (height >= boardht) {
+		} else if (height > partnersht && height <= boardht) {
 			scrolltothiselem('#partners');
+		} else if (height > boardht) {
+			scrolltothiselem('#board');
 		}
 	}
 
@@ -79,4 +101,14 @@ $(document).ready(function () {
         scrollTop: $(elem).offset().top
     }, 1000);
 	};
+
+	$('button#abouthd').click(function () {
+		scrolltothiselem('#about');
+	});
+	$('button#partnershd').click(function () {
+		scrolltothiselem('#partners');
+	});
+	$('button#boardhd').click(function () {
+		scrolltothiselem('#board');
+	});
 });
