@@ -11,6 +11,13 @@ html, body {
 	position: relative;
 }
 
+#about {
+	padding-top: 96px;
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+}
+
 #partners {
 	padding-top: 96px;
 	width: 100%;
@@ -128,23 +135,36 @@ html, body {
 	width: 80%;
 }
 
-.down {
+.down, .up {
 	background-color: #fff;
 	border: none;
 	height: 36px;
 	width: 36px;
 	border-radius: 36px;
 	line-height: 36px;
-	position: absolute;
+	position: fixed;
 	bottom: 16px;
 	right: 32px;
 	box-shadow: 0 0 2px rgba(0,0,0,0.45);
+	z-index: 100;
 }
 
 .down:hover {
 	bottom: 14px !important;
 }
 
+.up:hover {
+	bottom: 18px !important;
+}
+
 button:focus {
 	outline: 0;
+}
+
+#graphicbody {
+	padding-top: 80px;
+}
+
+.graphicimg {
+	width: 180px;
 }
