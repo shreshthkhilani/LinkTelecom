@@ -80,10 +80,10 @@ $(document).ready(function () {
 	}
 
 	var onepageup = function () {
-		var topht = $('#top').offset().top;
-		var aboutht = $('#about').offset().top;
-		var partnersht = $('#partners').offset().top;
-		var boardht = $('#board').offset().top;
+		var topht = $('#top').offset().top + 1;
+		var aboutht = $('#about').offset().top + 1;
+		var partnersht = $('#partners').offset().top + 1;
+		var boardht = $('#board').offset().top + 1;
 		var height = $(window).scrollTop();
 	  if (height > topht && height <= aboutht) {
 	  	scrolltothiselem('#top');
@@ -98,8 +98,8 @@ $(document).ready(function () {
 
 	var scrolltothiselem = function (elem) {
 		$('html, body').animate({
-        scrollTop: $(elem).offset().top
-    }, 1000);
+        scrollTop: $(elem).offset().top + 1
+    }, 1200);
 	};
 
 	$('button#abouthd').click(function () {

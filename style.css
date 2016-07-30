@@ -9,6 +9,34 @@ p {
 	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
+.bgimg {
+	width: 100%;
+	min-height: 60%;
+	display: inline-block;
+	background-attachment: fixed;
+	background-repeat: none;
+	background-size: 100% 100%;
+	background-image: url('http://newblog.ryderinc.bevelwisehosting.com/wp-content/uploads/2013/07/Ryder.jpg');
+}
+
+.bgimg2 {
+	width: 100%;
+	height: 60%;
+	background-attachment: fixed;
+	background-repeat: none;
+	background-size: 100% 100%;
+	background-image: url('http://divpacpartners.net/wp-content/uploads/2014/01/shutterstock_89041162.jpg');
+}
+
+.bgimg3 {
+	width: 100%;
+	height: 60%;
+	background-attachment: fixed;
+	background-repeat: none;
+	background-size: 100% 100%;
+	background-image: url('http://www.kn-portal.com/fileadmin/user_upload/documents/contract_logistics/images/Photo_Archive/KN_CL_0075_archive_hr.jpg');
+}
+
 #top {
 	padding-top: 96px;
 	width: 100%;
