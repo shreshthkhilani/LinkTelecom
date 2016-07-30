@@ -173,33 +173,3 @@ button:focus {
 .graphicimg {
 	width: 180px;
 }
-
-#circles {
-    position: absolute;
-    border: 1px solid #0067b5;
-    width: 2px;
-    height: 2px;
-    border-radius: 2px;
-    z-index: 1;
-    animation: wave 2s ease-in infinite;
-    -moz-animation: wave 2s ease-in infinite;
-    -webkit-animation: wave 2s ease-in infinite;
-}
-
-0% {
-    width: 2px;
-    height: 2px;
-    border-radius: 2px;
-    top: 87px;
-    left: 210px;
-    border: 1px solid #0067b5;
-}
-
-100% {
-    width: 302px;
-    height: 302px;
-    border-radius: 302px;
-    top: -63px;
-    left: 60px;
-    border: 1px solid #fff;
-}
