@@ -61,7 +61,7 @@ p {
 #board {
 	padding-top: 96px;
 	width: 100%;
-	min-height: 80%;
+	min-height: 90%;
 	position: relative;
 }
 
@@ -70,7 +70,7 @@ p {
 	min-height: 20%;
 	background-color: #6a6a6a;
 	color: #fff;
-	padding-top: 12px;
+	padding-top: 24px;
 }
 
 .text {
@@ -200,4 +200,13 @@ button:focus {
 
 .graphicimg {
 	width: 180px;
+}
+
+a > .orangetext {
+	text-decoration: underline;
+	color: #ffd964;;
+}
+
+a:hover {
+	text-decoration: none;
 }

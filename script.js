@@ -19,7 +19,7 @@ $(document).ready(function () {
 		var partnersht = $('#partners').offset().top;
 		var boardht = $('#board').offset().top;
 		var height = $(window).scrollTop();
-    if (height  > 0) {
+    if (height  > 1) {
     	$('#header').addClass('headershadow');
     } else {
     	$('#header').removeClass('headershadow');
@@ -53,7 +53,9 @@ $(document).ready(function () {
 		onepagedown();
 	});
 	$('.up').click(function () {
-		scrolltothiselem('#top');
+		$('html, body').animate({
+        scrollTop: $('#top').offset().top + 1
+    }, 3000);
 	});
 	$(window).keydown(function (e) {
 		var key = e.keyCode;
