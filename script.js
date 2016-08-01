@@ -24,6 +24,11 @@ $(document).ready(function () {
     } else {
     	$('#header').removeClass('headershadow');
     }
+    if (height > aboutht) {
+    	$('#header2').attr('id', 'header3');
+    } else {
+    	$('#header3').attr('id', 'header2');
+    }
     if (height >= boardht) {
     	$('.down').hide();
     	$('.up').show();
@@ -31,22 +36,44 @@ $(document).ready(function () {
     	$('.down').show();
     	$('.up').hide();
     }
-    if (height >= topht && height < aboutht) {
-    	$('#abouthd').addClass('linkbtninit');
-			$('#partnershd').addClass('linkbtninit');
-			$('#boardhd').addClass('linkbtninit');
+    // Header buttons
+    // if (height >= topht && height < aboutht) {
+    //  $('#abouthd').addClass('linkbtninit');
+		// 	$('#partnershd').addClass('linkbtninit');
+		// 	$('#boardhd').addClass('linkbtninit');
+		// } else if (height >= aboutht && height < partnersht) {
+		// 	$('#abouthd').removeClass('linkbtninit');
+		// 	$('#partnershd').addClass('linkbtninit');
+		// 	$('#boardhd').addClass('linkbtninit');
+		// } else if (height >= partnersht && height < boardht) {
+		// 	$('#abouthd').addClass('linkbtninit');
+		// 	$('#partnershd').removeClass('linkbtninit');
+		// 	$('#boardhd').addClass('linkbtninit');
+		// } else if (height >= boardht) {
+		// 	$('#abouthd').addClass('linkbtninit');
+		// 	$('#partnershd').addClass('linkbtninit');
+		// 	$('#boardhd').removeClass('linkbtninit');
+		// }
+		if (height >= topht && height < aboutht) {
+			$('#hc1').addClass('fullcircle');
+			$('#hc2').removeClass('fullcircle');
+			$('#hc3').removeClass('fullcircle');
+			$('#hc4').removeClass('fullcircle');
 		} else if (height >= aboutht && height < partnersht) {
-			$('#abouthd').removeClass('linkbtninit');
-			$('#partnershd').addClass('linkbtninit');
-			$('#boardhd').addClass('linkbtninit');
+			$('#hc1').removeClass('fullcircle');
+			$('#hc2').addClass('fullcircle');
+			$('#hc3').removeClass('fullcircle');
+			$('#hc4').removeClass('fullcircle');
 		} else if (height >= partnersht && height < boardht) {
-			$('#abouthd').addClass('linkbtninit');
-			$('#partnershd').removeClass('linkbtninit');
-			$('#boardhd').addClass('linkbtninit');
+			$('#hc1').removeClass('fullcircle');
+			$('#hc2').removeClass('fullcircle');
+			$('#hc3').addClass('fullcircle');
+			$('#hc4').removeClass('fullcircle');
 		} else if (height >= boardht) {
-			$('#abouthd').addClass('linkbtninit');
-			$('#partnershd').addClass('linkbtninit');
-			$('#boardhd').removeClass('linkbtninit');
+			$('#hc1').removeClass('fullcircle');
+			$('#hc2').removeClass('fullcircle');
+			$('#hc3').removeClass('fullcircle');
+			$('#hc4').addClass('fullcircle');
 		}
 	});
 	$('.down').click(function () {
@@ -104,13 +131,28 @@ $(document).ready(function () {
     }, 1200);
 	};
 
-	$('button#abouthd').click(function () {
+	// Header buttons
+	// $('button#abouthd').click(function () {
+	// 	scrolltothiselem('#about');
+	// });
+	// $('button#partnershd').click(function () {
+	// 	scrolltothiselem('#partners');
+	// });
+	// $('button#boardhd').click(function () {
+	// 	scrolltothiselem('#board');
+	// });
+	$('#hc1').click(function () {
+		scrolltothiselem('#top');
+	});
+	$('#hc2').click(function () {
 		scrolltothiselem('#about');
 	});
-	$('button#partnershd').click(function () {
+	$('#hc3').click(function () {
 		scrolltothiselem('#partners');
 	});
-	$('button#boardhd').click(function () {
+	$('#hc4').click(function () {
 		scrolltothiselem('#board');
 	});
+
+
 });

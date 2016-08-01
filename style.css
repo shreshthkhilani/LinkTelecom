@@ -82,7 +82,7 @@ p {
 	color: #ffd964;
 }
 
-#header {
+#header, #header3 {
 	background-color: rgba(255,255,255,0.60);
 	width: 100%;
 	position: fixed;
@@ -209,4 +209,49 @@ a > .orangetext {
 
 a:hover {
 	text-decoration: none;
+}
+
+.cluster {
+	position: fixed;
+	right: 44px;
+	bottom: 152px;
+	z-index: 100;
+}
+
+.hollowcircle {
+	width: 12px;
+	height: 12px;
+	border-radius: 12px;
+	margin-bottom: 6px;
+	border: 1px solid #ffd964;
+	background-color: #fff;
+	cursor: pointer;
+}
+
+.fullcircle {
+	background-color: #ffd964 !important;
+}
+
+.leftcorner {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(255,255,255,1);
+	margin-left: 32px;
+	margin-bottom: 32px;
+	min-width: 60%;
+	max-width: 80%;
+	padding-left: 16px;
+}
+
+#header2 {
+	background-color: rgba(255,255,255,0.60);
+	width: 100%;  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.strip {
+	background-color: #fff;
+	width: 100%;
+	padding-bottom: 10px;
 }
