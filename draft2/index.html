@@ -13,26 +13,35 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="shortcut icon" href="linkflavicon.png">
+	<link rel="stylesheet" type="text/css" href="../css/draft2.css">
+	<link rel="shortcut icon" href="../images/link/linkflavicon.png">
 
-	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="../js/draft2.js"></script>
 </head>
-<body>
-<div class="bgimg" id="top">
-	<div class="strip" align="center">
-		<a href="index.html"><img src="linklogo4.png" class="logohd"></a>
+<body> 
+<div id="header">
+	<div class="col-sm-3 col-sm-offset-1 col-xs-12">
+		<a href="index.html"><img src="../images/link/linklogo4.png" class="logohd"></a>
 	</div>
-	<div class="container" align="left">
-		<div class="leftcorner">
+	<div class="col-sm-7 col-xs-12" align="right">
+		<button class="linkbtnhd linkbtninit btnhd" id="abouthd">About</button>
+		<button class="linkbtnhd linkbtninit btnhd" id="partnershd">Services</button>
+		<button class="linkbtnhd linkbtninit btnhd" id="boardhd">Divisions</button>
+		<button class="linkbtnhd linkbtninit btnhd">Get in touch</button>
+	</div>
+</div>
+<div id="top">
+	<div class="container" align="center">
+		<div class="col-md-8 col-md-offset-2">
 			<p class="text">
 				<span class="orangetext">
-					Hello, we're <strong>Link Telecom</strong>. 
+					Hello, we're Link Telecom. 
 				</span>
 				<br>
 				Our distribution network gets your products to <strong>295</strong> districts and <strong>4129</strong> towns across India.
 			</p>
 			<br>
+			<button class="linkbtninit linkbtnbig">Get in touch</button>
 		</div>
 	</div>
 	<button class="down">
@@ -48,38 +57,28 @@
 		<div class="hollowcircle" id="hc4">&nbsp;</div>
 	</div>
 </div>
-<div id="header2">
-	<div class="col-sm-3 col-sm-offset-1 col-xs-12">
-		<a href="index.html"><img src="linklogo4.png" class="logohd"></a>
-	</div>
-	<div class="col-sm-7 col-xs-12" align="right">
-		<button class="linkbtnhd linkbtninit btnhd" id="abouthd">About</button>
-		<button class="linkbtnhd linkbtninit btnhd" id="partnershd">Services</button>
-		<button class="linkbtnhd linkbtninit btnhd" id="boardhd">Divisions</button>
-		<button class="linkbtnhd linkbtninit btnhd">Get in touch</button>
-	</div>
-</div>
+<div class="bgimg"></div>
 <div id="about">
 	<div class="container" align="center">
 		<h3>How do we <span class="orangetext">distingush ourselves</span> from other regional distributors?</h3>
 	</div>
 	<div class="container" id="graphicbody" align="center">
 		<div class="col-sm-4 graphicpanel">
-			<img src="images/transparency.png" class="graphicimg">
+			<img src="../images/graphics/transparency.png" class="graphicimg">
 			<div class="col-sm-8 col-sm-offset-2">
 				<h4>Better Transparency</h4>
 				<p>Our company culture is all about omniscience.</p>
 			</div>
 		</div>
 		<div class="col-sm-4 graphicpanel">
-			<img src="images/capital.png" class="graphicimg">
+			<img src="../images/graphics/capital.png" class="graphicimg">
 			<div class="col-sm-8 col-sm-offset-2">
 				<h4>Better Capital</h4>
 				<p>We're well capitalized, with a low leverage ratio.</p>
 			</div>
 		</div>
 		<div class="col-sm-4 graphicpanel">
-			<img src="images/software.png" class="graphicimg">
+			<img src="../images/graphics/software.png" class="graphicimg">
 			<div class="col-sm-8 col-sm-offset-2">
 				<h4>Better Software</h4>
 				<p>We utilize in-house software systems including one used to track sales boys.</p>
@@ -104,21 +103,21 @@
 	<br><br>
 	<div class="container">
 		<div class="col-sm-4 col-xs-6" align="center">
-			<img src="images/telmap.png" class="mapimg teimg">
-			<img src="images/itmap.png" class="mapimg itimg">
+			<img src="../images/graphics/telmap.png" class="mapimg teimg">
+			<img src="../images/graphics/itmap.png" class="mapimg itimg">
 		</div>
 		<div class="col-sm-8 col-xs-6">
-			<div class="col-sm-4 col-xs-6"><img src="images/htc.png" class="partnerimg teimg"></div>
-			<div class="col-sm-4 col-xs-6"><img src="images/lg.png" class="partnerimg teimg"></div>
-			<div class="col-sm-4 col-xs-6"><img src="images/jio.png" class="partnerimg teimg"></div>
-			<div class="col-sm-4 col-xs-6"><img src="images/lenovo.png" class="partnerimg teimg"></div>
-			<div class="col-sm-4 col-xs-6"><img src="images/yu.png" class="partnerimg teimg"></div>
-			<div class="col-sm-4 col-xs-6"><img src="images/ayn.png" class="partnerimg teimg"></div>
-			<div class="col-sm-4 col-xs-6"><img src="images/hp.png" class="partnerimg itimg"></div>
-			<div class="col-sm-4 col-xs-6"><img src="images/digisol.png" class="partnerimg itimg"></div>
-			<div class="col-sm-4 col-xs-6"><img src="images/acer.png" class="partnerimg itimg"></div>
-			<div class="col-sm-4 col-xs-6"><img src="images/lenovo.png" class="partnerimg itimg"></div>
-			<div class="col-sm-4 col-xs-6"><img src="images/bitdefender.png" class="partnerimg itimg"></div>
+			<div class="col-sm-4 col-xs-6"><img src="../images/partners/htc.png" class="partnerimg teimg"></div>
+			<div class="col-sm-4 col-xs-6"><img src="../images/partners/lg.png" class="partnerimg teimg"></div>
+			<div class="col-sm-4 col-xs-6"><img src="../images/partners/jio.png" class="partnerimg teimg"></div>
+			<div class="col-sm-4 col-xs-6"><img src="../images/partners/lenovo.png" class="partnerimg teimg"></div>
+			<div class="col-sm-4 col-xs-6"><img src="../images/partners/yu.png" class="partnerimg teimg"></div>
+			<div class="col-sm-4 col-xs-6"><img src="../images/partners/ayn.png" class="partnerimg teimg"></div>
+			<div class="col-sm-4 col-xs-6"><img src="../images/partners/hp.png" class="partnerimg itimg"></div>
+			<div class="col-sm-4 col-xs-6"><img src="../images/partners/digisol.png" class="partnerimg itimg"></div>
+			<div class="col-sm-4 col-xs-6"><img src="../images/partners/acer.png" class="partnerimg itimg"></div>
+			<div class="col-sm-4 col-xs-6"><img src="../images/partners/lenovo.png" class="partnerimg itimg"></div>
+			<div class="col-sm-4 col-xs-6"><img src="../images/partners/bitdefender.png" class="partnerimg itimg"></div>
 		</div>
 	</div>
 </div>
