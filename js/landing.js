@@ -8,7 +8,7 @@ $(document).ready(function () {
 	$('button#draft3').click(function () {
 		window.location = 'draft3/index.html';
 	});
-	$('button#draft3').click(function () {
-		window.location = 'draft3/index.html';
+	$('button#draft4').click(function () {
+		window.location = 'draft4/index.html';
 	});
 });
