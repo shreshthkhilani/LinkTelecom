@@ -261,3 +261,13 @@ a:hover {
 	font-size: 10pt;
 	line-height: 14pt;
 }
+
+.lll {
+	/*background-attachment: scroll;*/
+	background-image: url('/LinkTelecom/images/graphics/lineduplyinglinks.png');
+	max-width: 940px;
+	background-position: 100% 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	background-size: auto;
+}
