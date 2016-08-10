@@ -1,18 +1,19 @@
 $(document).ready(function () {
+	var baseurl = '/LinkTelecom';
+
 	$('button#aboutbtn').click(function () {
-		window.location = 'about/';
+		window.location = baseurl + '/about/';
 	});
 	$('button#servicesbtn').click(function () {
-		window.location = 'services/';
+		window.location = baseurl + '/services/';
 	});
 	$('button#achievementsbtn').click(function () {
-		window.location = 'achievements/';
+		window.location = baseurl + '/achievements/';
 	});
 	$('button#contactbtn').click(function () {
-		window.location = 'contact/';
+		window.location = baseurl + '/contact/';
 	});
 
-	var baseurl = '/LinkTelecom'
 	var pathname = window.location.pathname;
 	if (pathname === baseurl + '/about/') {
 		$('#aboutbtn').addClass('linkbtnnow');

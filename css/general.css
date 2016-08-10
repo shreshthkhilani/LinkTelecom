@@ -257,12 +257,7 @@ a:hover {
 	padding-bottom: 10px;
 }
 
-.messagetext, .valuetext {
+.pagewithtext {
 	font-size: 10pt;
 	line-height: 14pt;
-}
-
-.valuetitletext {
-	font-size: 14px;
-	line-height: 18px;
 }
