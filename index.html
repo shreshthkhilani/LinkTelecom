@@ -2,16 +2,17 @@
 layout: default
 ---
 <script type="text/javascript" src="{{ site.baseurl }}/js/home.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/randomemployee.js"></script>
 <div id="top" class="page100">
   <div class="container" align="center">
     <div class="col-md-8 col-md-offset-2">
       <p class="text">
         <span class="orangetext">Hello, we're Link Telecom.</span>
         <br>
-        Our distribution network connects you to <strong>21</strong> states, <strong>459</strong> districts, and <strong>5000</strong> towns today.
+        Our distribution network can connect you to <strong>21</strong> states, <strong>459</strong> districts, and <strong>5000</strong> towns today.
       </p>
       <br>
-      <button class="linkbtn linkbtnbig">Get in touch</button>
+      <button class="linkbtn linkbtnbig" id="biggetintouch">Get in touch</button>
     </div>
   </div>
   <button class="down">
@@ -31,10 +32,10 @@ layout: default
 <div class="bgimg"></div>
 <div id="about" class="page100 lll" align="center">
 
-      <h3>Learn About <span class="orangetext">Link Telecom</span>:</h3>
+      <h3>Learn About <!-- <span class="orangetext"> -->Link Telecom<!-- </span> -->:</h3>
       <div class="col-sm-6">
         <p class="textpage2">
-          We are one of the largest distribution houses in India with a focus on IT and telecom products. We bring together principals, distributor partners, retailers and consumers to make brands thrive.
+          We are one of the largest distribution houses in India with a focus on IT and telecom products. We bring together principals, re-distribution partners, retailers and consumers to make brands thrive.
         </p>
       </div>
 
@@ -49,21 +50,21 @@ layout: default
       <h4>Better Transparency</h4><br>
       <img src="{{ site.baseurl }}/images/graphics/transparency.png" class="graphicimg">
       <div class="col-sm-8 col-sm-offset-2" align="left">
-        <p class="graphicp">Our company culture encourages transparency which is good for customers, retailers, and our partners.</p>
+        <p class="graphicp">We are honest, fair, and reliable.</p>
       </div>
     </div>
     <div class="col-sm-4 graphicpanel">
       <h4>Better Capital</h4><br>
       <img src="{{ site.baseurl }}/images/graphics/capital.png" class="graphicimg">
       <div class="col-sm-8 col-sm-offset-2" align="left">
-        <p class="graphicp">We're well capitalized, with a low leverage ratio.</p>
+        <p class="graphicp">We are well capitalized, with a low leverage ratio.</p>
       </div>
     </div>
     <div class="col-sm-4 graphicpanel">
       <h4>Better Software</h4><br>
       <img src="{{ site.baseurl }}/images/graphics/software.png" class="graphicimg">
       <div class="col-sm-8 col-sm-offset-2" align="left">
-        <p class="graphicp">We utilize in-house software systems including one used to track sales boys.</p>
+        <p class="graphicp">We utilize in-house software systems including one used to track our sales teams.</p>
       </div>
     </div>
   </div>
@@ -73,28 +74,68 @@ layout: default
   <div class="col-lg-8 col-lg-offset-2" align="center">
     <h3>Employee <span class="orangetext">Spotlight</span><br><br></h3>
     <div class="col-sm-8" align="left">
-      <img src="http://redboxpictures.com/commercial/wp-content/uploads/2011/03/Business-location-portrait-00001.jpg" style="width: 100%;">
+      <img src="{{ site.baseurl }}/images/placeholder.png" style="width:100%;" id="rempimage">
     </div>
     <div class="col-sm-4" align="left">
-    <h5>Jane Doe</h5>
-    <p>Jane is a manager in the Telecom division of Link. She has been working with the company for 4 years now. <i>"Here is a quote from Jane about Link or something else!"</i></p>
+    <h5 id="rempname"></h5>
+    <p id="remptext"></p>
     <br>
-    <a href=""><p class="orangetext">Meet our other employees!</p></a>
+    <a href="{{ site.baseurl }}/about/#board"><p class="orangetext">Meet our other employees!</p></a>
     </div>
   </div>
 </div>
 <div id="partners" class="page80">
   <div class="container" align="center">
     <h3>Our <span class="orangetext">Partners</span></h3>
-    <div class="col-xs-3"><img src="{{ site.baseurl }}/images/partners/htcwhite.png" alt="" class="partnerimg"></div>
-    <div class="col-xs-3"><img src="{{ site.baseurl }}/images/partners/lgwhite.png" alt="" class="partnerimg"></div>
-    <div class="col-xs-3"><img src="{{ site.baseurl }}/images/partners/jiowhite.png" alt="" class="partnerimg"></div>
-    <div class="col-xs-3"><img src="{{ site.baseurl }}/images/partners/lenovowhite.png" alt="" class="partnerimg"></div>
-    <div class="col-xs-3"><img src="{{ site.baseurl }}/images/partners/yuwhite.png" alt="" class="partnerimg"></div>
-    <div class="col-xs-3"><img src="{{ site.baseurl }}/images/partners/aynwhite.png" alt="" class="partnerimg"></div>
-    <div class="col-xs-3"><img src="{{ site.baseurl }}/images/partners/hpwhite.png" alt="" class="partnerimg"></div>
-    <div class="col-xs-3"><img src="{{ site.baseurl }}/images/partners/digisolwhite.png" alt="" class="partnerimg"></div>
-    <div class="col-xs-3 col-xs-offset-3"><img src="{{ site.baseurl }}/images/partners/acerwhite.png" alt="" class="partnerimg"></div>
-    <div class="col-xs-3"><img src="{{ site.baseurl }}/images/partners/bitdefenderwhite.png" alt="" class="partnerimg"></div>
+    <div class="col-xs-3">
+      <a href="http://www.htc.com/in/">
+        <img src="{{ site.baseurl }}/images/partners/htcwhite.png" alt="" class="partnerimg">
+      </a>
+    </div>
+    <div class="col-xs-3">
+      <a href="http://www.lg.com/in">
+        <img src="{{ site.baseurl }}/images/partners/lgwhite.png" alt="" class="partnerimg">
+      </a>
+    </div>
+    <div class="col-xs-3">
+      <a href="https://www.jio.com/">
+        <img src="{{ site.baseurl }}/images/partners/jiowhite.png" alt="" class="partnerimg">
+      </a>
+    </div>
+    <div class="col-xs-3">
+      <a href="http://www.lenovo.com/in/en/">
+        <img src="{{ site.baseurl }}/images/partners/lenovowhite.png" alt="" class="partnerimg">
+      </a>
+    </div>
+    <div class="col-xs-3">
+      <a href="http://www.yuplaygod.com/">
+        <img src="{{ site.baseurl }}/images/partners/yuwhite.png" alt="" class="partnerimg">
+      </a>
+    </div>
+    <div class="col-xs-3">
+      <a href="http://www.appsyouneed.in/">
+        <img src="{{ site.baseurl }}/images/partners/aynwhite.png" alt="" class="partnerimg">
+      </a>
+    </div>
+    <div class="col-xs-3">
+      <a href="http://www8.hp.com/in/en/home.html">
+        <img src="{{ site.baseurl }}/images/partners/hpwhite.png" alt="" class="partnerimg">
+      </a>
+    </div>
+    <div class="col-xs-3">
+      <a href="http://smartlink.co.in/digisol/">
+        <img src="{{ site.baseurl }}/images/partners/digisolwhite.png" alt="" class="partnerimg">
+      </a>
+    </div>
+    <div class="col-xs-3 col-xs-offset-3">
+      <a href="http://www.acer.com/">
+        <img src="{{ site.baseurl }}/images/partners/acerwhite.png" alt="" class="partnerimg">
+      </a>
+    </div>
+    <div class="col-xs-3">
+      <a href="http://www.bitdefender.com/">
+        <img src="{{ site.baseurl }}/images/partners/bitdefenderwhite.png" alt="" class="partnerimg">
+      </a>
+    </div>
   </div>
 </div>

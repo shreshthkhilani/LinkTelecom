@@ -34,7 +34,52 @@ h1, h2, h3, h4, h5, p {
 	background-attachment: fixed;
 	background-repeat: none;
 	background-size: cover;
-	background-image: url('http://www.kn-portal.com/fileadmin/user_upload/documents/contract_logistics/images/Photo_Archive/KN_CL_0075_archive_hr.jpg');
+	background-image: url('https://static.pexels.com/photos/122164/pexels-photo-122164.jpeg');
+}
+
+.bgimg4 {
+	width: 100%;
+	height: 60%;
+	background-attachment: fixed;
+	background-repeat: none;
+	background-size: cover;
+	background-image: url('https://static.pexels.com/photos/6351/smartphone-desk-laptop-technology.jpg');
+}
+
+.bgimg5 {
+	width: 100%;
+	height: 60%;
+	background-attachment: fixed;
+	background-repeat: none;
+	background-size: cover;
+	background-image: url('https://static.pexels.com/photos/7112/woman-typing-writing-windows.jpg');
+}
+
+.bgimg6 {
+	width: 100%;
+	height: 60%;
+	background-attachment: fixed;
+	background-repeat: none;
+	background-size: cover;
+	background-image: url('https://static.pexels.com/photos/4316/technology-computer-chips-gigabyte.jpg');
+}
+
+.bgimg7 {
+	width: 100%;
+	height: 60%;
+	background-attachment: fixed;
+	background-repeat: none;
+	background-size: cover;
+	background-image: url('https://static.pexels.com/photos/8943/computer-motherboard-pc-wires.jpg');
+}
+
+.bgimg8 {
+	width: 100%;
+	height: 60%;
+	background-attachment: fixed;
+	background-repeat: none;
+	background-size: cover;
+	background-image: url('https://static.pexels.com/photos/113850/pexels-photo-113850.jpeg');
 }
 
 .page100 {
@@ -258,8 +303,8 @@ a:hover {
 }
 
 .pagewithtext {
-	font-size: 10pt;
-	line-height: 14pt;
+	font-size: 11pt;
+	line-height: 16pt;
 }
 
 .lll {
@@ -271,3 +316,31 @@ a:hover {
 	overflow: hidden;
 	background-size: auto;
 }
+
+.shitboxl, .shitboxr {
+	color: #6a6a6a;
+	width: 44%;
+	display: inline-block;
+	margin-bottom: 12px;
+	border: 1px solid #6a6a6a;
+	vertical-align: top;
+}
+
+.shitboxr {
+	margin-left: 10%;
+}
+
+.shitboxhead {
+	text-align: center;
+	background-color: #6a6a6a;
+	color: #fff;
+	overflow: auto;
+}
+
+.shitboxbody {
+	padding: 12px;
+}
+
+.boardpanels {
+	margin-bottom: 12px !important;
+} 

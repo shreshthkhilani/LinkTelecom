@@ -1,6 +1,12 @@
 $(document).ready(function () {
 	$('.up').hide();
 
+	var baseurl = '/LinkTelecom';
+
+	$('button#biggetintouch').click(function () {
+		window.location = baseurl + '/contact/';
+	});
+
 	var pagelist = ['#top', '#about', '#better','#employee', '#partners'];
 
 	$(window).scroll(function () {
