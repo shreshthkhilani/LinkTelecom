@@ -94,6 +94,7 @@ h1, h2, h3, h4, h5, p {
 	width: 100%;
 	min-height: 80%;
 	position: relative;
+	overflow: auto;
 }
 
 #partners {
@@ -344,3 +345,12 @@ a:hover {
 .boardpanels {
 	margin-bottom: 12px !important;
 } 
+
+#rempimage {
+	width: 100%;
+}
+
+#rempimagecontainer {
+	overflow: auto;
+	padding-bottom: 12px;
+}
