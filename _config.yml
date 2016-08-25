@@ -18,8 +18,8 @@ description: > # this means to ignore newlines until "baseurl:"
   Link Telecom is one of the largest distribution houses in India 
   with a focus on IT and telecom products. We bring together principals, 
   distributor partners, retailers and consumers to make brands thrive.
-baseurl: "/LinkTelecom" # the subpath of your site, e.g. /blog
-url: "https://shreshthkhilani.github.io" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://test.linktelecom.co.in" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown

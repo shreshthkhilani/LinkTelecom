@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	imageurl = '/LinkTelecom/images/employees/';
+	imageurl = '/images/employees/';
 
 	var employees = [
 		{
@@ -24,7 +24,7 @@ $(document).ready(function () {
 		},
 		{
 			name: 'Subhash Subberwal',
-			image: '../placeholder.png',
+			image: 'ss.JPG',
 			text: 'Lorem ipsum dolor... <i>"Here is a quote about Link or something else!"</i>'
 		},
 		{

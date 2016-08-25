@@ -1,7 +1,7 @@
 $(document).ready(function () {
 	$('.up').hide();
 
-	var baseurl = '/LinkTelecom';
+	var baseurl = '';
 
 	$('button#biggetintouch').click(function () {
 		window.location = baseurl + '/contact/';

@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, p {
 	background-attachment: fixed;
 	background-repeat: none;
 	background-size: cover;
-	background-image: url('/LinkTelecom/images/bg/1.jpg');
+	background-image: url('/images/bg/1.jpg');
 }
 
 .bgimg2 {
@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, p {
 	background-attachment: fixed;
 	background-repeat: none;
 	background-size: cover;
-	background-image: url('/LinkTelecom/images/bg/2.jpg');
+	background-image: url('/images/bg/2.jpg');
 }
 
 .bgimg3 {
@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, p {
 	background-attachment: fixed;
 	background-repeat: none;
 	background-size: cover;
-	background-image: url('/LinkTelecom/images/bg/3.jpeg');
+	background-image: url('/images/bg/3.jpeg');
 }
 
 .bgimg4 {
@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, p {
 	background-attachment: fixed;
 	background-repeat: none;
 	background-size: cover;
-	background-image: url('/LinkTelecom/images/bg/4.jpg');
+	background-image: url('/images/bg/4.jpg');
 }
 
 .bgimg5 {
@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, p {
 	background-attachment: fixed;
 	background-repeat: none;
 	background-size: cover;
-	background-image: url('/LinkTelecom/images/bg/5.jpg');
+	background-image: url('/images/bg/5.jpg');
 }
 
 .bgimg6 {
@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, p {
 	background-attachment: fixed;
 	background-repeat: none;
 	background-size: cover;
-	background-image: url('/LinkTelecom/images/bg/6.jpg');
+	background-image: url('/images/bg/6.jpg');
 }
 
 .bgimg7 {
@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, p {
 	background-attachment: fixed;
 	background-repeat: none;
 	background-size: cover;
-	background-image: url('/LinkTelecom/images/bg/7.jpg');
+	background-image: url('/images/bg/7.jpg');
 }
 
 .bgimg8 {
@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, p {
 	background-attachment: fixed;
 	background-repeat: none;
 	background-size: cover;
-	background-image: url('/LinkTelecom/images/bg/8.jpeg');
+	background-image: url('/images/bg/8.jpeg');
 }
 
 .page100 {
@@ -310,7 +310,7 @@ a:hover {
 
 .lll {
 	/*background-attachment: scroll;*/
-	background-image: url('/LinkTelecom/images/graphics/lineduplyinglinks.png');
+	background-image: url('/images/graphics/lineduplyinglinks.png');
 	max-width: 940px;
 	background-position: 100% 100%;
 	margin: 0 auto;

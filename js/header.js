@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	var baseurl = '/LinkTelecom';
+	var baseurl = '';
 
 	$('button#aboutbtn').click(function () {
 		window.location = baseurl + '/about/';
