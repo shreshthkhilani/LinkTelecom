@@ -354,3 +354,8 @@ a:hover {
 	overflow: auto;
 	padding-bottom: 12px;
 }
+
+.socialimg {
+	width: 32px;
+	margin-right: 16px;
+}
