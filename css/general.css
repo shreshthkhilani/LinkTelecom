@@ -147,22 +147,27 @@ h1, h2, h3, h4, h5, p {
 
 /* BUTTONS */
 
+/* This is the orange #f48220 */
+/* This is the navy #2e3b47 */
+
 .linkbtn {
 	background-color: #fff;
 	padding-left: 16px;
 	padding-right: 16px;
 	border-radius: 0px;
 	height: 36px;
-	color: #000;
-	border: 1px solid #f48220;
+	color: #2e3b47;
+	border: 1px solid #2e3b47;
 }
 
 .linkbtn:hover {
-	background-color: #f48220 !important;
+	background-color: #2e3b47 !important;
+	color: #fff !important;
 }
 
 .linkbtnnow {
-	background-color: #f48220 !important;
+	background-color: #2e3b47 !important;
+	color: #fff !important;
 }
 
 .btnhd {
