@@ -21,10 +21,30 @@ $(document).ready(function () {
 			name: 'Kaushik Goswami',
 			image: 'kaushikgoswami.JPG',
 			text: 'GM for IT'
+		},
+		{
+			name: 'Subhash Subberwal',
+			image: '../placeholder.png',
+			text: 'Lorem ipsum dolor... <i>"Here is a quote about Link or something else!"</i>'
+		},
+		{
+			name: 'Amit Jalan',
+			image: '../placeholder.png',
+			text: 'Lorem ipsum dolor... <i>"Here is a quote about Link or something else!"</i>'
+		},
+		{
+			name: 'Akshay Jalan',
+			image: '../placeholder.png',
+			text: 'Lorem ipsum dolor... <i>"Here is a quote about Link or something else!"</i>'
+		},
+		{
+			name: 'Arun Roy',
+			image: '../placeholder.png',
+			text: 'Lorem ipsum dolor... <i>"Here is a quote about Link or something else!"</i>'
 		}
 	];
 
-	var randomnumber = Math.floor(Math.random() * 4);  
+	var randomnumber = Math.floor(Math.random() * 8);  
 
 	var rempname = employees[randomnumber].name;
 	var rempimage = employees[randomnumber].image;
