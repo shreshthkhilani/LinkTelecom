@@ -123,7 +123,7 @@ h1, h2, h3, h4, h5, p {
 }
 
 .orangetext {
-	color: #ffd964;
+	color: #f48220;
 }
 
 #header {
@@ -154,15 +154,15 @@ h1, h2, h3, h4, h5, p {
 	border-radius: 0px;
 	height: 36px;
 	color: #000;
-	border: 1px solid #ffd964;
+	border: 1px solid #f48220;
 }
 
 .linkbtn:hover {
-	background-color: #ffd964 !important;
+	background-color: #f48220 !important;
 }
 
 .linkbtnnow {
-	background-color: #ffd964 !important;
+	background-color: #f48220 !important;
 }
 
 .btnhd {
@@ -250,7 +250,7 @@ button:focus {
 
 a > .orangetext {
 	text-decoration: underline;
-	color: #ffd964;;
+	color: #f48220;;
 }
 
 a:hover {
@@ -269,14 +269,14 @@ a:hover {
 	height: 12px;
 	border-radius: 12px;
 	margin-bottom: 6px;
-	border: 1px solid #ffd964;
+	border: 1px solid #f48220;
 	background-color: #fff;
 	cursor: pointer;
 	
 }
 
 .fullcircle {
-	background-color: #ffd964 !important;
+	background-color: #f48220 !important;
 }
 
 .leftcorner {
@@ -310,7 +310,7 @@ a:hover {
 
 .lll {
 	/*background-attachment: scroll;*/
-	background-image: url('/images/graphics/lineduplyinglinks.png');
+	background-image: url('/images/graphics/lineduplyinglinks2.png');
 	max-width: 940px;
 	background-position: 100% 100%;
 	margin: 0 auto;
