@@ -82,6 +82,24 @@ h1, h2, h3, h4, h5, p {
 	background-image: url('/images/bg/8.jpeg');
 }
 
+.bgimg9 {
+	width: 100%;
+	height: 60%;
+	background-attachment: fixed;
+	background-repeat: none;
+	background-size: cover;
+	background-image: url('https://static.pexels.com/photos/8804/city-lights-sony-balcony.jpg');
+}
+
+.bgimg10 {
+	width: 100%;
+	height: 60%;
+	background-attachment: fixed;
+	background-repeat: none;
+	background-size: cover;
+	background-image: url('/images/bg/9.jpg');
+}
+
 .page100 {
 	padding-top: 96px;
 	width: 100%;

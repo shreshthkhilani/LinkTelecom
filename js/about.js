@@ -1,19 +1,20 @@
 $(document).ready(function () {
 	$('.up').hide();
 
-	var pagelist = ['#message', '#values', '#board'];
+	var pagelist = ['#message', '#history', '#values', '#board'];
 
 	$(window).scroll(function () {
 		var page0ht = $(pagelist[0]).offset().top;
 		var page1ht = $(pagelist[1]).offset().top;
 		var page2ht = $(pagelist[2]).offset().top;
+		var page3ht = $(pagelist[3]).offset().top;
 		var height = $(window).scrollTop();
     if (height  > 1) {
     	$('#header').addClass('headershadow');
     } else {
     	$('#header').removeClass('headershadow');
     }
-    if (height >= page2ht) {
+    if (height >= page3ht) {
     	$('.down').hide();
     	$('.up').show();
     } else {
@@ -25,15 +26,23 @@ $(document).ready(function () {
 			$('#hc1').addClass('fullcircle');
 			$('#hc2').removeClass('fullcircle');
 			$('#hc3').removeClass('fullcircle');
+			$('#hc4').removeClass('fullcircle');
 		} else if (height >= page1ht && height < page2ht) {
 			$('#hc1').removeClass('fullcircle');
 			$('#hc2').addClass('fullcircle');
 			$('#hc3').removeClass('fullcircle');
-		} else if (height >= page2ht) {
+			$('#hc4').removeClass('fullcircle');
+		} else if (height >= page2ht && height < page3ht) {
 			$('#hc1').removeClass('fullcircle');
 			$('#hc2').removeClass('fullcircle');
 			$('#hc3').addClass('fullcircle');
-		} 
+			$('#hc4').removeClass('fullcircle');
+		} else if (height >= page3ht) {
+			$('#hc1').removeClass('fullcircle');
+			$('#hc2').removeClass('fullcircle');
+			$('#hc3').removeClass('fullcircle');
+			$('#hc4').addClass('fullcircle');
+		}
 	});
 	$('.down').click(function () {
 		onepagedown();
@@ -55,12 +64,15 @@ $(document).ready(function () {
 	var onepagedown = function () {
 		var page0ht = $(pagelist[0]).offset().top;
 		var page1ht = $(pagelist[1]).offset().top;
-		var page2ht = $(pagelist[2]).offset().top + 1;
+		var page2ht = $(pagelist[2]).offset().top;
+		var page3ht = $(pagelist[3]).offset().top + 1;
 		var height = $(window).scrollTop();
 		if (height >= page0ht && height < page1ht) {
 			scrolltothiselem(pagelist[1]);
 		} else if (height >= page1ht && height < page2ht) {
 			scrolltothiselem(pagelist[2]);
+		} else if (height >= page2ht && height < page3ht) {
+			scrolltothiselem(pagelist[3]);
 		} 
 	}
 
@@ -68,13 +80,16 @@ $(document).ready(function () {
 		var page0ht = $(pagelist[0]).offset().top + 1;
 		var page1ht = $(pagelist[1]).offset().top + 1;
 		var page2ht = $(pagelist[2]).offset().top + 1;
+		var page3ht = $(pagelist[3]).offset().top + 1;
 		var height = $(window).scrollTop();
 	  if (height > page0ht && height <= page1ht) {
 	  	scrolltothiselem(pagelist[0]);
 		} else if (height > page1ht && height <= page2ht) {
 			scrolltothiselem(pagelist[1]);
 		} else if (height > page2ht) {
-			scrolltothiselem(pagelist[2]);
+			scrolltothiselem(pagelist[2] && height <= page3ht);
+		} else if (height > page3ht) {
+			scrolltothiselem(pagelist[3]);
 		} 
 	}
 
@@ -92,5 +107,8 @@ $(document).ready(function () {
 	});
 	$('#hc3').click(function () {
 		scrolltothiselem(pagelist[2]);
+	});
+	$('#hc4').click(function () {
+		scrolltothiselem(pagelist[3]);
 	});
 });
