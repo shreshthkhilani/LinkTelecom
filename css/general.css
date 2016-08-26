@@ -382,3 +382,13 @@ a:hover {
 	width: 32px;
 	margin-right: 16px;
 }
+
+.footerlink, .footerlink:visited {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.footerlink:hover {
+	color: #fff !important;
+	text-decoration: none !important;
+}
