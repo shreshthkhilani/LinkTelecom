@@ -18,6 +18,10 @@ $(document).ready(function () {
 	  }
 	});
 
+	$('input:radio').click(function() {
+    $('#subjectinput').attr('value','[Link Website Contact Form] ' + this.value);
+  });
+
 	var pagelist = ['#top', '#contactform'];
 
 	$(window).scroll(function () {
