@@ -39,7 +39,7 @@ $(document).ready(function () {
 		},
 		{
 			name: 'Arun Roy',
-			image: '../placeholder.png',
+			image: 'arunroy.JPG',
 			text: 'GM (Telecom Division)<br>Mr. Roy looks after one of our telecom divisions and his on-ground presence has made him a regular face in every market he covers. <i>"This industry is built on people. Nothing else."</i>'
 		}
 	];
