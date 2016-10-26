@@ -1,6 +1,9 @@
 $(document).ready(function () {
 	var baseurl = '';
 
+	$('button#homebtn').click(function () {
+		window.location = baseurl + '/';
+	});
 	$('button#aboutbtn').click(function () {
 		window.location = baseurl + '/about/';
 	});
@@ -15,7 +18,9 @@ $(document).ready(function () {
 	});
 
 	var pathname = window.location.pathname;
-	if (pathname === baseurl + '/about/') {
+	if (pathname === baseurl + '/') {
+		$('#homebtn').addClass('linkbtnnow');
+	} else if (pathname === baseurl + '/about/') {
 		$('#aboutbtn').addClass('linkbtnnow');
 	} else if (pathname === baseurl + '/services/') {
 		$('#servicesbtn').addClass('linkbtnnow');
