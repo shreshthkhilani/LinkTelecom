@@ -4,7 +4,7 @@ $(document).ready(function () {
 	var baseurl = '';
 
 	$('button#biggetintouch').click(function () {
-		window.location = baseurl + '/contact/';
+		scrolltothiselem(pagelist[1]);
 	});
 
 	var pagelist = ['#top', '#about', '#better','#employee', '#partners'];
