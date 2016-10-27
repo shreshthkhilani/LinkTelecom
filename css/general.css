@@ -183,6 +183,21 @@ h1, h2, h3, h4, h5, p {
 	color: #fff !important;
 }
 
+.linkbtn2 {
+	background-color: #fff;
+	padding-left: 16px;
+	padding-right: 16px;
+	border-radius: 0px;
+	height: 36px;
+	color: #f48220;
+	border: 1px solid #f48220;
+}
+
+.linkbtn2:hover {
+	background-color: #f48220 !important;
+	color: #fff !important;
+}
+
 .linkbtnnow {
 	background-color: #2e3b47 !important;
 	color: #fff !important;
@@ -190,6 +205,12 @@ h1, h2, h3, h4, h5, p {
 
 .btnhd {
 	margin-top: 22px;
+	margin-left : 4px;
+}
+
+.btndd {
+	margin-top: 4px;
+	margin-left : 4px;
 }
 
 .linkbtnbig {
