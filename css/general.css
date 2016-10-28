@@ -189,12 +189,12 @@ h1, h2, h3, h4, h5, p {
 	padding-right: 16px;
 	border-radius: 0px;
 	height: 36px;
-	color: #f48220;
-	border: 1px solid #f48220;
+	color: #6a6a6a;
+	border: 1px solid #6a6a6a;
 }
 
 .linkbtn2:hover {
-	background-color: #f48220 !important;
+	background-color: #6a6a6a !important;
 	color: #fff !important;
 }
 
